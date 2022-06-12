@@ -27,18 +27,19 @@ public class LearningmanagentApplication {
 //			);
 ////			String email = ;
 //			Student student = new Student(
-//					"Sanda",
-//					"Geethma",
-//					"sanda123@gmail.com",
-//					Gender.FEMALE,
+//					"2",
+//					"Harshana",
+//					"Jayathissa",
+//					"harshana6@gmail.com",
+//					Gender.MALE,
 //					address
 //			);
-
-//			Query query = new Query();
-//			query.addCriteria(Criteria.where("email").is(email));
 //
-//			List<Student> students = mongoTemplate.find(query, Student.class);
-
+////			Query query = new Query();
+////			query.addCriteria(Criteria.where("email").is(email));
+//
+////			List<Student> students = mongoTemplate.find(query, Student.class);
+//
 //			repository.insert(student);
 //		};
 //	}

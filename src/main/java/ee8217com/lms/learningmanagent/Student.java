@@ -13,18 +13,16 @@ public class Student {
     private String regNumber;
     private String firstName;
     private String lastName;
-    @Indexed(unique = true)
+    //@Indexed(unique = true)
     private String email;
-//    private Gender gender;
-//    private Address address;
+    private String gender;
 
-    public Student(String regNumber, String firstName, String lastName, String email, Gender gender, Address address) {
+    public Student(String regNumber, String firstName, String lastName, String email, String gender) {
         this.regNumber = regNumber;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-//        this.gender = gender;
-//        this.address = address;
+        this.gender = gender;
     }
 
     public String regNumber() {
@@ -58,10 +56,6 @@ public class Student {
         this.email = email;
     }
 
-//    public String address() {
-//        return address;
-//    }
-//
 //    public void address(String address) {
 //        this.address = address;
 //    }
