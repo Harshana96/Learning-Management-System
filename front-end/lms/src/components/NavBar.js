@@ -17,13 +17,10 @@ export default class AppNavbar extends Component {
 
     render() {
         return <Navbar color="dark" dark expand="md">
-            <NavbarBrand tag={Link} to="/">Home</NavbarBrand>
+            <NavbarBrand tag={Link} to="/">--- LMS ---</NavbarBrand>
             <NavbarText className="Navbartextt">Learning management System</NavbarText>
             <NavbarToggler onClick={this.toggle}/>
             <Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="ml-auto" navbar>
-                    NavBar
-                </Nav>
             </Collapse>
         </Navbar>;
     }

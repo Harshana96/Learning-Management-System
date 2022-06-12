@@ -2,7 +2,6 @@ package ee8217com.lms.learningmanagent;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
@@ -13,7 +12,6 @@ public class Student {
     private String regNumber;
     private String firstName;
     private String lastName;
-    //@Indexed(unique = true)
     private String email;
     private String gender;
 
@@ -55,9 +53,5 @@ public class Student {
     public void email(String email) {
         this.email = email;
     }
-
-//    public void address(String address) {
-//        this.address = address;
-//    }
 
 }

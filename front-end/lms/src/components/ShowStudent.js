@@ -59,10 +59,14 @@ class ShowStudent extends Component {
             <div>
                 <AppNavbar/>
                 <Container fluid>
-                    <div className="float-right">
-                        <Button color="success" tag={Link} to="/students/add">Add Student</Button>
+
+                    <div>
+                        <hr/>
                     </div>
-                    <h3>My Student List</h3>
+                    <h3>Course Student</h3>
+                    <div>
+                        <hr/>
+                    </div>
                     <Table className="mt-4">
                         <thead>
                         <tr>
@@ -70,13 +74,16 @@ class ShowStudent extends Component {
                             <th width="20%">First Name</th>
                             <th width="20%">Last Name</th>
                             <th width="20%">Email</th>
-                            <th width="10%">Gender</th>
+                            <th width="20%">Gender</th>
                         </tr>
                         </thead>
                         <tbody>
                         {studentList}
                         </tbody>
                     </Table>
+                    <div className="float-right">
+                        <Button color="info" tag={Link} to="/students/add">Add New Student</Button>
+                    </div>
                 </Container>
             </div>
         );
